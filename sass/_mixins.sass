@@ -1,0 +1,36 @@
+@use 'variables'
+
+@mixin texto($size)
+     text-align: center
+     color: variables.$primary-color
+     font-size: $size
+
+@mixin container
+     max-width: variables.$div-width
+
+@mixin center
+     display: flex
+     align-items: center
+
+@mixin anchor
+     flex-direction: row
+     justify-content: space-between
+     color: variables.$primary-color
+
+@mixin gradiente($color1, $color2, $color3, $color4)
+     background-image: linear-gradient(160deg, $color1, $color2, $color3, $color4)
+     background-size: 300%
+     background-position: left
+     transition: 1s background-position ease-in-out
+     &:hover
+          background-position: right
+
+@mixin transition
+     transition: 0.5s
+
+@mixin divs
+     width: variables.$div-width
+     border: solid 1.5px variables.$primary-color 
+     border-radius: 70px
+     font-size: 1.5rem
+     margin: .5rem 0

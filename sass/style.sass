@@ -1,0 +1,57 @@
+@use 'variables'
+@use 'mixins'
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Lato:wght@300&family=Montserrat:wght@200&family=Roboto:wght@500&family=Tiro+Devanagari+Sanskrit:ital@1&display=swap')
+@import url(//db.onlinewebfonts.com/c/415443bb39543697023878c5a2a338b9?family=Graphik+Light)
+
+body
+     background-color: rgb(56, 56, 56)
+
+header
+     @include mixins.texto(4rem)
+     font-family: 'Tiro Devanagari Sanskrit', serif
+     margin-top: 1rem
+main
+     @include mixins.center
+     flex-direction: column
+     div
+          @include mixins.divs
+          img
+               width: variables.$img-size
+          &:hover
+               transform: scale(1.11)
+          a
+               @include mixins.center
+               @include mixins.anchor
+#lastfm
+     @include mixins.gradiente(#f21e27, #FF1F2A, #D91A24,#B3151D)
+     @include mixins.transition
+     font-family: 'Barlow', sans-serif
+
+#myanimelist
+     @include mixins.gradiente(#0150a6,#0257B3,#01458C, #013266)
+     @include mixins.transition
+     font-family: 'Verdana', Arial
+
+#backloggd
+     @include mixins.gradiente(#232856, #292F63, #191D3D, #434DA3)
+     @include mixins.transition
+     font-family: 'Roboto', sans-serif
+
+#letterboxd
+     @include mixins.gradiente(#16232d,#192833, #1D2E3B, #3C5F7A)
+     @include mixins.transition
+     font-family: Graphik Ligh
+
+#mydramalist
+     @include mixins.gradiente(#00619d, #0069AB, #005285,#003A5E)
+     @include mixins.transition
+     font-family: 'Lato', sans-serif
+
+#serializd
+     @include mixins.gradiente(#00bca5,#00C9B2 , #00A390, #007D6E)
+     @include mixins.transition
+     font-family: 'Montserrat', sans-serif
+
+footer
+     @include mixins.texto(1.2rem)
+     font-style: italic
