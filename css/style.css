@@ -24,6 +24,11 @@ main div {
   font-size: 1.5rem;
   margin: 0.5rem 0;
 }
+@media (max-width: 900px) {
+  main div {
+    width: 90%;
+  }
+}
 main div img {
   width: 18%;
 }

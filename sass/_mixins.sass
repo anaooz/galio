@@ -34,3 +34,8 @@
      border-radius: 70px
      font-size: 1.5rem
      margin: .5rem 0
+
+@mixin mobile($max)
+     @media(max-width: #{$max}px)
+          @content
+          width: 90%
